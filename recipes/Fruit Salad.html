@@ -5,12 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Salad</title>
     <style>
-        h1 {
-          text-align: center;
+        body {
+            text-align: center;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
-    </style>  
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        ul {
+            text-align: left;
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .section {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .step {
+            text-align: left;
+            margin: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Fruit Salad</h1>
+    <header>
+        <h1>Delicious Recipes</h1>
+    </header>
+
+    <div class="section">
+        <img src="./images/grilledchickensalad.jpg" alt="Grilled Chicken Salad">
+        <h2>Grilled Chicken Salad</h2>
+        <p>Healthy and delicious grilled chicken salad recipe.</p>
+    </div>
+
+    <div class="section">
+        <h2>Ingredients</h2>
+        <ul>
+            <li>2 boneless skinless chicken breasts (about 1 1/4 pounds)</li>
+            <!-- Other list items -->
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>Directions</h2>
+        <div class="step">
+            <h3>Step 1</h3>
+            <p>Heat grill to medium-high. Season chicken with coriander, oregano, salt, and pepper. Grill, covered, turning halfway through, until slightly charred and the thickest part of the breast registers 165ºF when probed with a thermometer, 18 to 22 minutes. Let rest for another 5 minutes, then slice.</p>
+        </div>
+        <!-- Other steps -->
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Delicious Recipes. All rights reserved.</p>
+    </footer>
 </body>
 </html>
