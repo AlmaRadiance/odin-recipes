@@ -3,16 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Odin Recipes</title>
     <style>
-        h1 {
+    body {
+            background-image: url('odin-recipes/recipes/images/Veggies.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0; 
+    }
+    
+    h1 {
              text-align: center;
-        }
+             margin-top: 20px;
+    }
+    
+    li {
+            margin-bottom: 10px;
+    }
+
+    nav {
+        background-color: rgba(248, 248, 248, 0.8); 
+        padding: 20px;
+    }
+
+    footer {
+        background-color: rgba(51, 51, 51, 0.8); 
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
     </style>
 </head>
 <body>
    <h1>SunnySide Greens Corner</h1> 
-   <ul>
+<nav>
+   <ul class="recipe-list">
     <li><a href="recipes/Grilled Chicken Salad.html">Grilled Chicken Salad</a></li>
     <li><a href="recipes/Caesar Salad.html">Caesar Salad</a></li>
     <li><a href="recipes/Cobb Salad.html">Cobb Salad</a></li>
@@ -24,6 +50,7 @@
     <li><a href="recipes/Mediterranean Chickpea Wedge Salad.html">Mediterranean Chickpea Wedge Salad</a></li>
     <li><a href="recipes/Grilled Shrimp Salad.html">Grilled Shrimp Salad Salad</a></li>
   </ul>
+</nav>
   <footer>
     <p>&copy; 2023 SunnySide Greens Corner - The Odin Project | By: Alma P.</p>
 </footer>
