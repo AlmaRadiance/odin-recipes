@@ -37,7 +37,7 @@ The project is organized as follows:
 6. **GitHub Pages Deployment:**
    - Utilized GitHub Pages to publish the project on the web.
    - Set up the main HTML file as "index.html" to enable easy web access.
-   - Configured GitHub repository settings to enable the project to be viewed at "file:///Users/almaplaku/repos/git_test/repos/odin-recipes/index.html."
+ 
 
 ## Skills Demonstrated
 
