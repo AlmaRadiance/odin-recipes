@@ -1,4 +1,4 @@
-# Recipe Website - Odin Project
+# SunnySide Greens Corner - Odin Recipe Project
 
 This project was completed as part of "The Odin Project" Foundations Course. The main objective was to build a basic recipe website to practice and showcase HTML skills. The project is designed to serve as a foundation for future styling with CSS.
 
