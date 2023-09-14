@@ -5,7 +5,7 @@ This project was completed as part of "The Odin Project" Foundations Course. The
 ## Table of Contents
 - [Project Title and Overview](#project-title-and-overview)
 - [Project Steps](#project-steps)
-- [Skills Demonstrated](#skills-demonstrated)
+  -[Skills Demonstrated](#skills-demonstrated)
 
 ## Project Overview
 
