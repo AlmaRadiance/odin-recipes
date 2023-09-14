@@ -3,8 +3,8 @@
 This project was completed as part of "The Odin Project" Foundations Course. The main objective was to build a basic recipe website to practice and showcase HTML skills. The project is designed to serve as a foundation for future styling with CSS.
 
 ## Table of Contents
-- [Project Title and Overview](#project-title-and-overview)
-- [Project Steps](#project-steps)
+  -[Project Title and Overview](#project-title-and-overview)
+  -[Project Steps](#project-steps)
   -[Skills Demonstrated](#skills-demonstrated)
 
 ## Project Overview
