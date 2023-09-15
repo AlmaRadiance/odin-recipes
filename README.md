@@ -1,6 +1,11 @@
-# Recipe Website - Odin Project
+# SunnySide Greens Corner - Odin Recipe Project
 
 This project was completed as part of "The Odin Project" Foundations Course. The main objective was to build a basic recipe website to practice and showcase HTML skills. The project is designed to serve as a foundation for future styling with CSS.
+
+## Table of Contents
+- [Project Title and Overview](#project-title-and-overview)
+- [Project Steps](#project-steps)
+- [Skills Demonstrated](#skills-demonstrated) 
 
 ## Project Overview
 
@@ -37,7 +42,7 @@ The project is organized as follows:
 6. **GitHub Pages Deployment:**
    - Utilized GitHub Pages to publish the project on the web.
    - Set up the main HTML file as "index.html" to enable easy web access.
-   - Configured GitHub repository settings to enable the project to be viewed at "file:///Users/almaplaku/repos/git_test/repos/odin-recipes/index.html."
+ 
 
 ## Skills Demonstrated
 
