@@ -16,6 +16,7 @@
 
     
     
+
     
 
     body {
@@ -42,6 +43,7 @@
         background-color: rgba(248, 248, 248, 0.281); 
         padding: 20px;
     }
+
 
 
 
@@ -91,7 +93,6 @@
     }
 
 
-
     .container ul {
         list-style-type: none;
         padding: 0;
@@ -122,11 +123,12 @@
 
 
 
+
 /*Footer*/
     footer {
         background-color: rgba(0, 0, 0, 0.8); 
         color: white;
-        padding: 90px;
+        padding: 30px;
         text-align: center;
     }
 
@@ -168,6 +170,7 @@
         color: #4caf50;
         font-family: Copperplate, sans-serif;
         font-size: 25px;
+        margin: 0;
     } 
     
     .footer ul {
@@ -179,7 +182,7 @@
     }
 
     .footer ul li {
-        margin-bottom: 0px;
+        margin-bottom: 10px;
         list-style: none; 
     }
 
@@ -187,7 +190,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 20px; 
+        margin-bottom: 10px; 
     }
     
     .footer-logo .icon img {
@@ -196,6 +199,76 @@
     }
     
 
+
+
+
+
+/* Media Query for Smaller Screens */
+    @media screen and (max-width: 768px) {
+        header {
+            padding: 1rem; 
+        }
+        .container {
+            padding: 1rem; 
+        }
+    
+        .recipe-card {
+            margin: 0 5px; 
+        }
+    
+        .container ul {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+        }
+    
+        input[type="email"] {
+            padding: 10px; 
+            width: calc(100% - 20px);
+            margin-bottom: 10px; 
+        }
+    
+        button.btn {
+            padding: 10px 30px; 
+            width: 100%;
+        }
+
+        .footer {
+            padding: 30px; 
+        }
+
+        .footer-logo {
+            flex-direction: column; 
+            text-align: center; 
+            margin-bottom: 10px; 
+        }
+
+        .footer-logo .icon img {
+            max-width: 80px; 
+            margin-right: 0; 
+            margin-bottom: 10px; 
+        }
+
+        .footer-title {
+            font-size: 20px; 
+        }
+
+        input[type="email"] {
+            padding: 10px 15px; 
+            margin-bottom: 10px;
+            width: calc(100% - 30px);
+            display: block;
+            margin: 0 auto 10px; 
+        }
+
+        button.btn {
+            padding: 10px 20px; 
+            margin-top: 10px;
+            width: calc(100% - 30px);
+            display: block; 
+            margin: 0 auto;
+        }
+    
+
+    }
 
 
   
