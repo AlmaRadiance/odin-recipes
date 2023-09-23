@@ -199,6 +199,32 @@
     }
     
 
+    .social-icons ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 10px 0;
+    }
+    
+    .social-icons li {
+        margin: 0 10px;
+    }
+    
+    .social-icons a {
+        text-decoration: none;
+    }
+    
+
+    .social-icons img {
+        width: 30px;
+        height: 30px; 
+    }
+    
+    .social-icons a:hover img {
+        opacity: 0.7; 
+    }
+    
 
 
 
