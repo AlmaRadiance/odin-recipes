@@ -51,10 +51,62 @@
 
 
 /*Container*/
-    .recipe-container {
-        display: flex;
-        justify-content: center; 
-    }
+
+.recipe-container {
+    display: flex;
+    justify-content: center; 
+}
+
+.image-container {
+    text-align: center; 
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto; 
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.image-container .caption {
+    margin-top: 5px;
+    color: #ff6600;
+}
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff6600;
+}
+
+
+
+/*Recipe Card*/
 
     .recipe-card {
         text-align: center;
@@ -62,61 +114,55 @@
         position: relative;
         overflow: hidden;
         width: 250px;
-    }
-
-
-    .image-container {
-        text-align: center; 
-    }
-
-    .image-container img {
-        display: block;
-        margin: 0 auto; 
-        width: 100%;
-        height: auto;
-        object-fit: cover;
+        border: 1px solid #ddd; 
+        border-radius: 8px;
         transition: transform 0.3s ease;
     }
 
-    .image-container .caption {
-        margin-top: 5px;
-        color: #ff6600;
+    .recipe-card:hover {
+        transform: scale(1.05); 
     }
 
-
-    .container {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 2rem;
-        background-color: rgba(255, 255, 255, 0.9);
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    .recipe-card a {
+        text-decoration: none;
+        color: inherit; 
     }
 
-
-    .container ul {
-        list-style-type: none;
-        padding: 0;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 2rem;
+    .recipe-card p {
+        color: #777;
+        margin: 5px 0;
+        font-size: 14px;
     }
+    
+    .recipe-card .info {
+        background-color: #f9f9f9;
+        padding: 10px;
+        border-radius: 0 0 8px 8px;
+        border-top: 1px solid #ddd;
+    }
+    
+    .recipe-card .info p {
+        margin: 5px 0;
+        font-size: 12px;
+        color: #777;
+    }
+    
+    .recipe-card .info h4 {
+        margin: 5px 0;
+        font-size: 16px;
+        color: #333;
+    }
+
 
     .recipe-card img {
         height: auto;
         object-fit: cover;
         max-height: 150px;
         transition: transform 0.3s ease;
-    }
- 
-    a {
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
+        border-bottom: 1px solid #ddd; 
     }
     
-    a:hover {
-        color: #ff6600;
-    }
+
 
 
 
@@ -143,7 +189,7 @@
         padding: 10px 150px;
         width: 200px;
         border: 1px solid white;
-        border-radius: 1px;
+        border-radius: 5px;
         font-family: Arial, sans-serif;
         text-transform: uppercase;
     }
@@ -154,7 +200,7 @@
         color: #fff;
         border: none;
         cursor: pointer;
-        border-radius: 1px;
+        border-radius: 5px;
         transition-duration: 0.4s;
         font-family: verdana, sans-serif;
         text-transform: uppercase;
@@ -199,32 +245,53 @@
     }
     
 
-    .social-icons ul{
-        display: flex;
-        justify-content: center;
-        list-style-type: none;
-        padding: 0;
-        margin: 10px 0;
-    }
-    
-    .social-icons li {
-        margin: 0 10px;
-    }
-    
-    .social-icons a {
-        text-decoration: none;
-    }
-    
 
-    .social-icons img {
-        width: 30px;
-        height: 30px; 
+/* Social Icons */
+
+    .footer .fab {
+        margin-top: 10px; 
     }
-    
-    .social-icons a:hover img {
-        opacity: 0.7; 
-    }
-    
+        .fab.fa-instagram.fa-2x,
+        .fab.fa-twitter.fa-2x,
+        .fab.fa-youtube.fa-2x,
+    {
+            color: white; 
+            transition: color 0.3s;
+        }
+
+        .fab.fa-instagram.fa-2x:hover {
+            color: #c32aa3;
+        }
+
+        .fab.fa-twitter.fa-2x:hover {
+            color: #1da1f2;
+        }
+
+        .fab.fa-youtube.fa-2x:hover {
+            color: #ff0000;
+        }
+
+
+
+        .social-icons {
+            margin-top: 10px; 
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
+        
+        .social-icons i {
+            margin: 0 10px; 
+            font-size: 1em;
+            border: 2px solid #4caf50;
+            border-radius: 50%;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            padding: 10px; 
+            background-color: #333;
+        }
+
+
+        
 
 
 
