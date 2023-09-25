@@ -1,3 +1,4 @@
+/*Pasta.css*/
 body {
     text-align: center;
     margin: 0;
@@ -16,6 +17,8 @@ ul {
     list-style-type: disc;
     padding-left: 20px;
 }
+
+
 .section {
     background-color: #f5f5f5;
     padding: 20px;
@@ -31,4 +34,48 @@ ul {
 img {
     max-width: 60%;
     height: auto;
+}
+
+/*Footer*/
+.modern-footer {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 17px;
+}
+
+
+
+
+.main-page-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 5px;
+    border: none;
+    border-radius: 100px;
+    background: rgb(147, 129, 77);
+    color: #ffd277;        
+    font-size: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.4s;
+    border: 2px solid rgba(255, 255, 255, 0.842);
+}
+
+.main-page-button:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.842);
 }

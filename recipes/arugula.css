@@ -1,3 +1,5 @@
+/*Arugula.css*/
+
 body {
     text-align: center;
     margin: 0;
@@ -11,6 +13,8 @@ header {
 h1 {
     margin: 20px 0;
 }
+
+
 ul {
     text-align: left;
     list-style-type: disc;
@@ -18,7 +22,7 @@ ul {
 }
 
 
-
+/*Section*/
 .section {
     background-color: #f5f5f5;
     padding: 20px;
@@ -36,6 +40,11 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none !important;
+}
+
+
 
 /*Footer*/
     .modern-footer {
@@ -52,35 +61,31 @@ img {
 
     .footer-content p {
         margin: 0;
-        font-size: 14px;
+        font-size: 17px;
     }
 
-    .footer-content a {
-        color: #fff;
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 14px;
-    }
-
-    .footer-content a:hover {
-        text-decoration: underline;
-    }
+  
+   
 
     .main-page-button {
         display: inline-block;
-        padding: 10px 50px;
-        margin-top: 20px;
+        padding: 10px 20px;
+        margin: 15px 5px;
         border: none;
-        border-radius: 20px;
-        background-color: rgb(11, 124, 11);
-        color: #fff;
-        font-size: 10px;
+        border-radius: 100px;
+        background: rgb(147, 129, 77);
+        color: #ffd277;        
+        font-size: 14px;
         text-align: center;
+        text-transform: uppercase;
         text-decoration: none;
         cursor: pointer;
-        transition: background-color 0.3s;
+        transition: background-color 0.4s;
+        border: 2px solid rgba(255, 255, 255, 0.842);
     }
 
     .main-page-button:hover {
-        background-color: rgb(196, 132, 13);
+        background-color: white;
+        color: rgb(0, 0, 0);
+        border: 2px solid rgba(0, 0, 0, 0.842);
     }

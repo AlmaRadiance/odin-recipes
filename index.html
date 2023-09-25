@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="index.css"> 
+    <script src="index.js"></script>
     <title>Odin Recipes</title>
 </head>
 
@@ -14,7 +15,7 @@
 
     <header> 
         <h1>SunnySide Greens Corner</h1> 
-
+<!--Menu-->
             <div class="menu-button">
                 <i class="fas fa-bars"></i>
             </div>
@@ -43,7 +44,7 @@
     <div class="container main-content">
         
         <h2 class="container-title">Explore Our Delicious Homemade Salad Recipes</h2>
-        
+<!--Recipe Cards-->   
         <ul>
             <li class="recipe-card">
                 <a href="recipes/Grilled Chicken Salad.html">
@@ -177,71 +178,15 @@
         </ul>
         <input type="email" placeholder="Enter your email address"/>
         <button class="btn">Subscribe</button>
-    
-      
- 
-    <div class="social-icons"> 
-        <i class="fab fa-instagram fa-2x"></i>
-        <i class="fab fa-twitter fa-2x"></i>
-        <i class="fab fa-youtube fa-2x"></i>
-    </div>
-
-   
+         
+ <!--Social Icons-->
+        <div class="social-icons"> 
+            <i class="fab fa-instagram fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+            <i class="fab fa-youtube fa-2x"></i>
+        </div>
     </footer>
 
-
-
-
-
-
-    <script>
-           document.addEventListener('DOMContentLoaded', function() {
-    var menuButton = document.querySelector('.menu-button');
-    var menu = document.querySelector('.menu');
-
-    menuButton.addEventListener('click', function() {
-        menu.style.left = '0';
-        
-        // Hide recipe cards in the menu
-        var menuRecipeCards = document.querySelectorAll('.menu .recipe-card');
-        menuRecipeCards.forEach(function(card) {
-            card.style.display = 'block';
-        });
-
-        // Hide recipe cards on the page
-        var pageRecipeCards = document.querySelectorAll('.container .recipe-card');
-        pageRecipeCards.forEach(function(card) {
-            card.style.display = 'none';
-        });
-    });
-
-    var menuItems = document.querySelectorAll('.menu li');
-    menuItems.forEach(function(item) {
-        item.addEventListener('click', function() {
-            menuItems.forEach(function(item) {
-                item.classList.remove('clicked');
-            });
-            this.classList.add('clicked');
-        });
-    });
-
-    document.addEventListener('click', function(event) {
-        if (!menu.contains(event.target) && !menuButton.contains(event.target)) {
-            menu.style.left = '-250px';
-            menuItems.forEach(function(item) {
-                item.classList.remove('clicked');
-            });
-
-            // Show recipe cards on the page
-            var pageRecipeCards = document.querySelectorAll('.container .recipe-card');
-            pageRecipeCards.forEach(function(card) {
-                card.style.display = 'block';
-            });
-        }
-    });
-});
-
-    </script>
 
 </body>
 </html>
