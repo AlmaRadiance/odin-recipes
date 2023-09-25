@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="arugula.css">
     <title>Arugula Salad</title>
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
 </head>
 <body>
     <header>
         <h1>Arugula Salad Recipe</h1>
     </header>
 
+
+
+
+<!--Section-->
     <div class="section">
         <img src="./images/arugulasalad.jpg" alt="Arugula Salad">
         <h2>Arugula Salad</h2>
@@ -19,6 +24,9 @@
         </p>
     </div>
 
+    
+
+<!--Ingredients-->
     <div class="section">
         <h2>Ingredients</h2>
         <ul>
@@ -40,6 +48,7 @@
         </ul>
     </div>
 
+<!--Directions-->
     <div class="section">
         <h2>Directions</h2>
             <div class="step">
@@ -61,9 +70,70 @@
             </div>
     </div>
 
-    <footer>
-        <p>&copy; 2023 SunnySide Greens Corner - The Odin Project | By: Alma P.</p>
-        <a href="../index.html">Go to Main Page</a>
+    
+<!--Download Recipe-->
+    <div class="section">
+        <h2>Download Recipe</h2>
+        <button onclick="downloadPDF()">Download as PDF</button>
+    </div>
+
+
+
+
+
+<!--Footer-->
+    <footer class="modern-footer">
+        <div class="footer-content">
+            <p>&copy; 2023 SunnySide Greens Corner - The Odin Project | By: Alma P.</p>
+            <a href="../index.html" class="main-page-button">Go to Main Page</a>
+        </div>
     </footer>
+
+
+
+    <script>
+        function downloadPDF() {
+            const pdf = new jsPDF();
+    
+            const title = 'Arugula Salad Recipe';
+            const intro = 'Elevate your arugula salad with the addition of salty and savory prosciutto. This delightful salad combines the peppery bite of arugula with the sweetness of ripe cherry tomatoes, the richness of creamy goat cheese, the crunch of toasted pine nuts, and the luxurious flavors of prosciutto. The balsamic vinaigrette dressing brings all these components together for a balanced and satisfying dish.';
+            const ingredients = [
+                "cups fresh arugula leaves, washed and dried",
+                "1 cup cherry tomatoes, halved",
+                "1/2 cup crumbled goat cheese",
+                "3-4 slices of prosciutto, torn into bite-sized pieces",
+                "1/4 cup pine nuts, toasted",
+                "1/4 cup extra-virgin olive oil",
+                "1 teaspoon Dijon mustard",
+                "1 clove garlic, minced",
+                "Salt and freshly ground black pepper, to taste"
+            ];
+            const directions = [
+                "Step 1: Wash and dry the arugula leaves thoroughly. Place them in a large salad bowl. Cut the cherry tomatoes in half and add them to the bowl with the arugula. Crumble the goat cheese and set it aside. Tear the prosciutto slices into bite-sized pieces and set them aside. Toast the pine nuts in a dry skillet over medium heat for about 2-3 minutes until golden brown and fragrant. Set them aside.",
+                "Step 2: In a small bowl, whisk together the balsamic vinegar, Dijon mustard, minced garlic, salt, and black pepper. Slowly drizzle in the extra-virgin olive oil while whisking continuously to create an emulsified dressing. Continue whisking until well combined and slightly thickened.",
+                "Step 3: Drizzle the balsamic vinaigrette over the arugula and cherry tomatoes in the salad bowl. Gently toss to evenly coat the ingredients with the dressing. Sprinkle the crumbled goat cheese over the dressed salad. Add the torn prosciutto pieces to the salad for an added layer of flavor. Sprinkle the toasted pine nuts over the salad to provide a satisfying crunch. Give the salad a final gentle toss to ensure all the components are well distributed."
+            ];
+    
+            pdf.setFontSize(16);
+            pdf.text(title, 10, 10);
+    
+            pdf.setFontSize(12);
+            pdf.text(intro, 10, 20);
+    
+            pdf.setFontSize(14);
+            pdf.text('Ingredients', 10, 40);
+            pdf.setFontSize(12);
+            pdf.text(ingredients, 20, 50);
+    
+            pdf.setFontSize(14);
+            pdf.text('Directions', 10, 80);
+            pdf.setFontSize(12);
+            pdf.text(directions, 20, 90);
+    
+            pdf.save('arugula_recipe.pdf');
+        }
+    </script>
+    
+
 </body>
 </html>

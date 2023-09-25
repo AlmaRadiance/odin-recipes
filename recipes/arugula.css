@@ -16,6 +16,9 @@ ul {
     list-style-type: disc;
     padding-left: 20px;
 }
+
+
+
 .section {
     background-color: #f5f5f5;
     padding: 20px;
@@ -32,3 +35,52 @@ img {
     max-width: 50%;
     height: auto;
 }
+
+
+/*Footer*/
+    .modern-footer {
+        background-color: #333;
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .footer-content {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    .footer-content p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .footer-content a {
+        color: #fff;
+        text-decoration: none;
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    .footer-content a:hover {
+        text-decoration: underline;
+    }
+
+    .main-page-button {
+        display: inline-block;
+        padding: 10px 50px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 20px;
+        background-color: rgb(11, 124, 11);
+        color: #fff;
+        font-size: 10px;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .main-page-button:hover {
+        background-color: rgb(196, 132, 13);
+    }
